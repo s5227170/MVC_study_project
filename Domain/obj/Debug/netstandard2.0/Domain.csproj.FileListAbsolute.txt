@@ -1,0 +1,9 @@
+D:\Uni_Work\React\MVC\Domain\bin\Debug\netstandard2.0\Domain.deps.json
+D:\Uni_Work\React\MVC\Domain\bin\Debug\netstandard2.0\Domain.dll
+D:\Uni_Work\React\MVC\Domain\bin\Debug\netstandard2.0\Domain.pdb
+D:\Uni_Work\React\MVC\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
+D:\Uni_Work\React\MVC\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
+D:\Uni_Work\React\MVC\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
+D:\Uni_Work\React\MVC\Domain\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
+D:\Uni_Work\React\MVC\Domain\obj\Debug\netstandard2.0\Domain.dll
+D:\Uni_Work\React\MVC\Domain\obj\Debug\netstandard2.0\Domain.pdb
