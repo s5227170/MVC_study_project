@@ -1,0 +1,11 @@
+.TextLogo {
+    background-color: rgb(82, 50, 11);
+    padding: 8px;
+    height: 90%;    
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
+.TextLogo img{
+    height: 90%;
+}

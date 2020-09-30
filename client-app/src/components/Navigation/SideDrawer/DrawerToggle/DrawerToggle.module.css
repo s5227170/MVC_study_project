@@ -1,0 +1,16 @@
+.navBar{
+    margin: 15px;
+    font-weight: bold;
+    padding: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: rgb(215, 202, 202);
+    border-radius: 20px;
+    color: rgb(82, 50, 11);    
+    
+}
+
+.navBar:hover{
+    background-color: rgb(175, 165, 165);
+    cursor: pointer;
+}
