@@ -1,4 +1,7 @@
-import React, { Copmponent } from 'react';
+import React, { Component } from 'react';
+
+import classes from './TeaBrowser.module.css';
+import TeaItem from '../../components/TeaItem/TeaItem';
 
 class TeaBrowser extends Component{
     //The Tea Browser will be inside this class, it will include requests
@@ -11,7 +14,32 @@ class TeaBrowser extends Component{
     }
     render() {
         return(
-            <h1></h1>
+            <div className={classes.TeaBrowser}>
+                <TeaItem img='' name='Tea 1' price='1$'/>
+                <TeaItem img='' name='Tea 2' price='2$'/>
+                <TeaItem img='' name='Tea 3' price='3$'/>
+                <TeaItem img='' name='Tea 4' price='4$'/>
+                <TeaItem img='' name='Tea 1' price='1$'/>
+                <TeaItem img='' name='Tea 2' price='2$'/>
+                <TeaItem img='' name='Tea 3' price='3$'/>
+                <TeaItem img='' name='Tea 4' price='4$'/>
+                <TeaItem img='' name='Tea 1' price='1$'/>
+                <TeaItem img='' name='Tea 2' price='2$'/>
+                <TeaItem img='' name='Tea 3' price='3$'/>
+                <TeaItem img='' name='Tea 4' price='4$'/>
+                <TeaItem img='' name='Tea 1' price='1$'/>
+                <TeaItem img='' name='Tea 2' price='2$'/>
+                <TeaItem img='' name='Tea 3' price='3$'/>
+                <TeaItem img='' name='Tea 4' price='4$'/>
+                <TeaItem img='' name='Tea 1' price='1$'/>
+                <TeaItem img='' name='Tea 2' price='2$'/>
+                <TeaItem img='' name='Tea 3' price='3$'/>
+                <TeaItem img='' name='Tea 4' price='4$'/>
+                <TeaItem img='' name='Tea 1' price='1$'/>
+                <TeaItem img='' name='Tea 2' price='2$'/>
+                <TeaItem img='' name='Tea 3' price='3$'/>
+                <TeaItem img='' name='Tea 4' price='4$'/>
+            </div>
         );
     }
 }
