@@ -6,7 +6,7 @@ using System.Threading;
 using Persistence;
 using Microsoft.EntityFrameworkCore;
 
-namespace App.TeaProducts
+namespace Application.TeaProducts
 {
     public class List
     {

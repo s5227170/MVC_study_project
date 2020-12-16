@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Persistence.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class Initial_create : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,8 +15,8 @@ namespace Persistence.Migrations
                     Title = table.Column<string>(nullable: true),
                     Description = table.Column<string>(nullable: true),
                     Price = table.Column<decimal>(nullable: false),
-                    Date = table.Column<DateTime>(nullable: false),
                     Reduced = table.Column<bool>(nullable: false),
+                    Date = table.Column<DateTime>(nullable: false),
                     ImagePath = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

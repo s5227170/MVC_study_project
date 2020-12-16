@@ -1,24 +1,41 @@
 .TeaItem{
-    height: 200px;
+    height: 220px;
     width: 350px;
     margin: 10px;
     border: 2px solid black;
     box-sizing: border-box;
     background-color: white;
     display: block;
-    position: relative;
 }
 
 .NameAndPrice{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;   
-    justify-content: space-between; 
-    display: inline-flex;    
+    width: auto;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
 }
 
-.NameAndPrice p{
-    margin: 0px;
+.Name{
     width: 50%;
+    height: 100%;
+    padding: 0.4rem;
+}
+
+.Price{
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.ImgHolder{
+    height: 75%;
+}
+
+.Img{
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    margin: 0px;
 }

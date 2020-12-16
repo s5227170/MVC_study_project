@@ -1,0 +1,15 @@
+.ProductForm{
+    margin: 20px auto;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
+    border: 2px solid rgba(215, 202, 202);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+    .ContactData {
+        width: 500px;
+    }
+}

@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using App.TeaProducts;
 using Application.TeaProducts;
 using Domain;
 using MediatR;

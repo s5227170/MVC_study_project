@@ -4,8 +4,9 @@ using System.Threading.Tasks;
 using MediatR;
 using Domain;
 using Persistence;
+using FluentValidation;
 
-namespace App.TeaProducts
+namespace Application.TeaProducts
 {
     public class Create
     {
@@ -17,13 +18,26 @@ namespace App.TeaProducts
 
             public string Description { get; set; }
 
-            public decimal Price { get; set; }
+            public double Price { get; set; }
 
             public DateTime Date { get; set; }
 
             public Boolean Reduced { get; set; }
 
             public string ImagePath { get; set; }
+        }
+
+        public class CommandValidator : AbstractValidator<Command>
+        {
+            public CommandValidator()
+            {
+                RuleFor(x => x.Title).NotEmpty();
+                RuleFor(x => x.Description).NotEmpty();
+                RuleFor(x => x.Price).NotEmpty();
+                RuleFor(x => x.Date).NotEmpty();
+                RuleFor(x => x.Reduced).NotEmpty();
+                RuleFor(x => x.ImagePath).NotEmpty();
+            }
         }
 
         public class Handler : IRequestHandler<Command>

@@ -1,11 +1,13 @@
 using System;
+using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using Application.Errors;
 using Domain;
 using MediatR;
 using Persistence;
 
-namespace App.TeaProducts
+namespace Application.TeaProducts
 {
     public class Details
     {
@@ -25,6 +27,9 @@ namespace App.TeaProducts
             public async Task<TeaProduct> Handle(Query request, CancellationToken cancellationToken)
             {
                 var teaProduct = await _context.TeaProducts.FindAsync(request.Id);
+
+                if(teaProduct == null)
+                    throw new RestException(HttpStatusCode.NotFound, new {teaProduct = "Not Found!"});
 
                 return teaProduct;
             }

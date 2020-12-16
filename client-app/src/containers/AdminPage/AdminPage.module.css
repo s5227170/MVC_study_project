@@ -1,0 +1,67 @@
+.AdminLayout{
+    height: 80%;
+    width: 80%;
+    overflow: hidden;
+    overflow-x: hidden;
+    background-color: rgba(53, 52, 52);
+    box-sizing: border-box;
+    margin: auto;
+    box-shadow: 12px 10px 15px -4px rgba(0,0,0,0.8), -12px 10px 15px -4px rgba(0,0,0,0.8);
+    border-radius: 14px;    
+    border: 1px solid rgb(88, 88, 88);
+}
+
+.AdminLayoutNavigation{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgba(215, 202, 202);
+    justify-content: space-between;
+    margin: 0;
+}
+
+.AdminNavbarItems{
+    text-align: left;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+}
+
+.AdminNavbarItems p{
+    margin: 0;
+    padding: 0px 5px;
+}
+
+.AdminLayoutNavigation label:hover{
+    background-color: rgba(175, 165, 165);
+}
+
+.AdminLayoutNavigation label:active{
+    background-color: rgba(215, 202, 202);
+}
+
+.AdminLayoutBody{
+    height:100%;
+    padding: 20px;
+}
+
+
+
+
+.AdminLayoutBody::-webkit-scrollbar{
+    width: 15px;
+}
+.AdminLayoutBody::-webkit-scrollbar-track{
+    border: 7px solid rgba(82, 50, 11, 0);
+    
+}
+
+.AdminLayoutBody::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        45deg,
+        rgba(215, 202, 202),
+        rgba(215, 202, 202)
+    );
+    border-radius: 0px 14px 14px 0px;
+}

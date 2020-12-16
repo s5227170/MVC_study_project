@@ -1,6 +1,9 @@
 using System;
+using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using Application.Errors;
+using FluentValidation;
 using MediatR;
 using Persistence;
 
@@ -16,7 +19,7 @@ namespace Application.TeaProducts
 
             public string Description { get; set; }
 
-            public decimal? Price { get; set; }
+            public double? Price { get; set; }
 
             public DateTime? Date { get; set; }
 
@@ -24,6 +27,19 @@ namespace Application.TeaProducts
 
             public string ImagePath { get; set; }
 
+        }
+
+        public class CommandValidator : AbstractValidator<Command>
+        {
+            public CommandValidator()
+            {
+                RuleFor(x => x.Title).NotEmpty();
+                RuleFor(x => x.Description).NotEmpty();
+                RuleFor(x => x.Price).NotEmpty();
+                RuleFor(x => x.Date).NotEmpty();
+                RuleFor(x => x.Reduced).NotEmpty();
+                RuleFor(x => x.ImagePath).NotEmpty();
+            }
         }
 
         public class Handler : IRequestHandler<Command>
@@ -40,8 +56,8 @@ namespace Application.TeaProducts
             {
                 var teaProduct = await _context.TeaProducts.FindAsync(request.Id);
 
-                if (teaProduct == null)
-                    throw new Exception("Could not find Product!");
+                if(teaProduct == null)
+                    throw new RestException(HttpStatusCode.NotFound, new {teaProduct = "Not Found!"});
 
                 teaProduct.Title=request.Title ?? teaProduct.Title;
                 teaProduct.Description=request.Title ?? teaProduct.Title;

@@ -1,0 +1,15 @@
+.ProductListTable{
+    background-color: rgba(53, 52, 52);
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    float: left;
+    
+}
+
+.ProductListTable table, th, td{
+    border: 2px solid rgba(53, 52, 52);
+    padding: 2px 5px;
+    text-align: left;
+    background-color: rgba(215, 202, 202);
+}

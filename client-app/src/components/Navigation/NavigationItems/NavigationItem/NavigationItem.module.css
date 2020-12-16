@@ -6,7 +6,6 @@
     box-sizing: border-box;
     display: flex;    
     align-items: center;
-    
 }
 
 .NavigationItem a{
@@ -21,4 +20,5 @@
 .NavigationItem a:active,
 .NavigationItem a.active {
     background-color: rgb(175, 165, 165);
+    transform: scale(1.05);
 }

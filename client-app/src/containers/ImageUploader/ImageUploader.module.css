@@ -1,0 +1,63 @@
+.ImageUploaderModal {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border: 1px groove rgb(215, 202, 202);
+    box-sizing: border-box;
+    background: linear-gradient(
+        45deg,
+        rgb(4, 58, 22),
+        rgb(134, 184, 114)        
+    );
+    border-radius: 4px;
+    box-shadow: 5px 5px 15px 5px;
+}
+
+
+.ImageUpload * {
+    display: block;
+    margin: 5px;
+}
+
+.ImageUpload {
+    font-weight: 800;
+    margin-bottom: 10%;
+}
+
+.Line {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.Progress {
+    margin-top: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.ProgressBar {
+    text-align: center;
+}
+
+progress {
+    width: 60%;
+    height: 2em;
+}
+
+.Continue {
+    margin: 10px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.Continue * :hover{
+    transform: scale(1.08);
+}
+
+.Continue * {
+    margin: 0px 5px 0px 0px;
+    cursor: pointer;
+}

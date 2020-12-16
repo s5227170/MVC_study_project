@@ -12,7 +12,19 @@ code {
     monospace;
 }
 
-:root {
-  --bg-primary: rgb(215, 202, 202);
-  --bg-secondary: rgb(175, 165, 165);
+/* ::-webkit-scrollbar{
+    width: 15px;
 }
+::-webkit-scrollbar-track{
+    border: 0px solid rgba(0,0,0);
+    
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        45deg,
+        rgb(134, 184, 114),
+        rgb(4, 58, 22)
+    );
+    border-radius: 20px 20px 20px 20px;
+} */

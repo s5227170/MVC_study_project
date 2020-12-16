@@ -1,0 +1,13 @@
+.UploadProductButton{
+    text-align: left;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    border: none;
+    background-color: rgba(215, 202, 202);
+}
+
+.UploadProductButton p{
+    margin: 0;
+    padding: 0px 5px;    
+}

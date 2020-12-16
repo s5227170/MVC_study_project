@@ -4,7 +4,12 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(82, 50, 11);
+    background: linear-gradient(
+        45deg,
+        rgb(4, 58, 22),
+        rgb(134, 184, 114)        
+    );
+    border-bottom: 1px solid rgb(215, 202, 202);
     display: flex;
     justify-content: space-between;
     align-items: center;
